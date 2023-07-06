@@ -10,7 +10,7 @@
 
 `const bin = new jsonbin('64a598039d312622a37ab8a2');`
 
-> 可以
+> 可以到 https://json.minicg.com 获取json仓库
 > 也可自行要到 https://jsonbin.io 注册账号并生成 **公开** 的存储仓ID
 > 免费用户，可生成无限条存储仓记录ID，每个仓库读写限10000次
 
