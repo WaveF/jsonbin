@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JSONBIN</title>
+    <link rel="stylesheet" href="https://ax.minicg.com/pico.min.css?v8">
+    <style>
+        .container { display: flex; flex-direction: column; width: 400px; padding: 40px; }
+        .field { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, auto); gap: 10px; }
+        .field button { width: 100%; margin: 0; }
+        input { text-align: center; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <input id="bid" type="text" placeholder="Bin-ID" value="64a598039d312622a37ab8a2" />
+        <input id="acckey" type="text" placeholder="Access Key" value="$2b$10$ORUu9zSsUfG3J2A.b3XnReqmAP98d8.xzXHSMkR3.k0oYhXiInJee" />
+        <div class="field">
+            <button class="btnRead">读取</button>
+            <button class="btnUpdate">更新</button>
+            <button class="btnCreate">创建</button>
+            <button class="btnDel">删除</button>
+        </div>
+    </div>
     <script src="./jsonbin.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

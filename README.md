@@ -8,44 +8,48 @@
 
 #### 初始化
 
-`var bin = new jsonbin('5d17788d138da81118290901');`
+`const bin = new jsonbin('64a598039d312622a37ab8a2');`
 
-> 需自行要到 https://jsonbin.io 注册账号并生成 **Public** 的存储仓ID
-> 免费用户，可生成无限条存储仓记录ID，每条读写限10000次
+> 可以
+> 也可自行要到 https://jsonbin.io 注册账号并生成 **公开** 的存储仓ID
+> 免费用户，可生成无限条存储仓记录ID，每个仓库读写限10000次
 
 
+#### 读取数据
 
-#### 上传数据
-
-```javascript
-var myData = {user:'wavef'}; /* 你的数据 */
-
-bin.update(myData, data=>{
-    console.log('写入成功', data);
-});
+```js
+bin.read();
 ```
-
-
-
-#### 下载数据
-
-```javascript
-bin.read(data=>{
-    console.log('读取成功', data);
-});
-```
-
-
 
 #### 更新数据
 
-```javascript
-bin.read(data=>{
-    data.user = 'rain'; /* 改写数据 */
-    bin.update(data, newData=>{
-        console.log('更新成功', newData);
-    });
-});
+```js
+bin.update({foo:'bar'});
 ```
 
-> 注： 其实就是先读取数据，改写后再上传
+
+#### 创建仓库
+
+```js
+bin.create('name', false);
+```
+
+#### 删除仓库
+
+```js
+bin.delete();
+```
+
+#### 设置API-KEY
+
+```js
+bin.apiKey = '';
+```
+
+
+#### 设置ACCESS-KEY
+
+```js
+bin.accessKey = '';
+```
+
