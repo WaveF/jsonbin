@@ -85,4 +85,4 @@ window.jsonbin = y;
 export {
   y as default
 };
-//# sourceMappingURL=jsonbin.mjs.map
+//# sourceMappingURL=jsonbin.es.js.map
