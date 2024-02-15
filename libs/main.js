@@ -121,5 +121,5 @@ class jsonbin {
   }
 }
 
-// window.jsonbin = jsonbin;
+window.jsonbin = jsonbin;
 export default jsonbin;

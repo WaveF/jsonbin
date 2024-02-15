@@ -8,7 +8,7 @@ var i = (n, t, e) => (d(n, t, "read from private field"), e ? e.call(n) : t.get(
   t instanceof WeakSet ? t.add(n) : t.set(n, e);
 }, c = (n, t, e, s) => (d(n, t, "write to private field"), s ? s.call(n, e) : t.set(n, e), e);
 var r, o, h;
-class b {
+class y {
   constructor(t) {
     a(this, r, "");
     a(this, o, "");
@@ -81,7 +81,8 @@ class b {
   }
 }
 r = new WeakMap(), o = new WeakMap(), h = new WeakMap();
+window.jsonbin = y;
 export {
-  b as default
+  y as default
 };
 //# sourceMappingURL=jsonbin.mjs.map
