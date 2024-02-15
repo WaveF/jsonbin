@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSONBIN</title>
-    <link rel="stylesheet" href="https://ax.minicg.com/pico.min.css?v8">
+    <link rel="stylesheet" href="./assets/pico.min.css">
     <style>
         .container { display: flex; flex-direction: column; width: 400px; padding: 40px; }
         .field { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, auto); gap: 10px; }
@@ -14,8 +14,8 @@
 </head>
 <body>
     <div class="container">
-        <input id="bid" type="text" placeholder="Bin-ID" value="64a598039d312622a37ab8a2" />
-        <input id="acckey" type="text" placeholder="Access Key" value="$2b$10$ORUu9zSsUfG3J2A.b3XnReqmAP98d8.xzXHSMkR3.k0oYhXiInJee" />
+        <input id="bid" type="text" placeholder="Bin-ID" value="64a6daf08e4aa6225eba02b1" />
+        <input id="acckey" type="password" placeholder="Access Key" value="$2b$10$ORUu9zSsUfG3J2A.b3XnReqmAP98d8.xzXHSMkR3.k0oYhXiInJee" />
         <div class="field">
             <button class="btnRead">读取</button>
             <button class="btnUpdate">更新</button>
@@ -23,7 +23,7 @@
             <button class="btnDel">删除</button>
         </div>
     </div>
-    <script src="./jsonbin.js"></script>
-    <script src="./index.js"></script>
+    <!-- <script src="./dist/jsonbin.iife.js"></script> -->
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

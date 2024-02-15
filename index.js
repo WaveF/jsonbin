@@ -1,3 +1,5 @@
+import jsonbin from './dist/jsonbin'
+
 const btnRead = document.querySelector('.btnRead');
 const btnUpdate = document.querySelector('.btnUpdate');
 const btnDel = document.querySelector('.btnDel');
@@ -14,29 +16,33 @@ async function main() {
 
     // 读数据
     btnRead.addEventListener('click', async e => {
+        console.log('读取数据...');
         const res = await bin.read();
-        console.log('read', res.record);
+        console.log('已读取', res.record);
     });
 
     // 写数据
     btnUpdate.addEventListener('click', async e => {
+        console.log('更新数据...');
         const data = { foo: 'bar' };
         const res = await bin.update(data);
-        console.log('updated', res);
+        console.log('已更新', res);
     });
 
     // 创建仓库
     btnCreate.addEventListener('click', async e => {
+        console.log('创建仓库...');
         bin.apiKey = getApiKey();
         const res = await bin.create('axure');
-        console.log('create', res);
+        console.log('已创建', res);
     });
 
     // 删除仓库
     btnDel.addEventListener('click', async e => {
+        console.log('删除仓库...');
         bin.apiKey = getApiKey();
         const res = await bin.delete();
-        console.log('delete', res);
+        console.log('已删除', res);
     });
 }
 

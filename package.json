@@ -1,0 +1,22 @@
+{
+  "name": "jsonbin",
+  "version": "1.0.0",
+  "description": "",
+  "main":"libs/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    
+    "git:info": "git remote -v",
+    "git:reset": "git remote remove origin",
+    "git:init": "git remote add gitee https://gitee.com/wavef/jsonbin.git && git remote add github https://github.com/WaveF/jsonbin.git && git push -u gitee master",
+    "git:push": "git push gitee master && git push github master:main"
+  },
+  "keywords": [],
+  "author": "WaveF",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.4.11"
+  }
+}
