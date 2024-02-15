@@ -1,4 +1,4 @@
-import jsonbin from './dist/jsonbin'
+import jsonbin from './dist/jsonbin.es'
 
 const btnRead = document.querySelector('.btnRead');
 const btnUpdate = document.querySelector('.btnUpdate');
