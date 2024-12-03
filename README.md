@@ -18,12 +18,14 @@
 #### 读取数据
 
 ```js
+// 读取仓库最新的数据
 bin.read();
 ```
 
 #### 更新数据
 
 ```js
+// 将新数据写入仓库
 bin.update({foo:'bar'});
 ```
 
@@ -31,18 +33,21 @@ bin.update({foo:'bar'});
 #### 创建仓库
 
 ```js
-bin.create('name', false);
+// 生成一个新的仓库，并返回仓库id，后续可以用这个id进行操作
+bin.create('name');
 ```
 
 #### 删除仓库
 
 ```js
+// 删除仓库
 bin.delete();
 ```
 
 #### 设置API-KEY
 
 ```js
+// 设置API-KEY，用于操作你名下的所有仓库
 bin.apiKey = '';
 ```
 
@@ -50,6 +55,7 @@ bin.apiKey = '';
 #### 设置ACCESS-KEY
 
 ```js
+// 设置ACCESS-KEY，用于操作特定的私有仓库
 bin.accessKey = '';
 ```
 
